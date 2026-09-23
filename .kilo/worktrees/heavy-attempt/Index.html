@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Order fresh coffee, cold drinks, pastries, and desserts from Patty's Coffee Shop." />
+  <title>Patty's Coffee Shop</title>
+  <link rel="icon" href="images/coffee cup.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project1.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#menu">Skip to menu</a>
+
+  <header class="site-header" id="home">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Patty's Coffee Shop home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Patty's<br /><small>Coffee Shop</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="order-link" href="#coffee-order">Your order <span id="nav-order-count">0</span></a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">BREWED WITH CARE · ONITSHA</p>
+        <h1>A warm cup makes a <em>better day.</em></h1>
+        <p>Fresh coffee, soft pastries, and small moments worth slowing down for—made just the way you like them.</p>
+        <a class="primary-button" href="#menu">Explore the menu <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="images/coffee cup.jpg" alt="A fresh cup of coffee" class="hero-image" />
+        <div class="hero-note"><span aria-hidden="true">✦</span> Made fresh every day</div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR FAVOURITE</p>
+          <h2 id="menu-title">Made for your moment.</h2>
+        </div>
+        <p>Choose something delicious, add it to your order, and we’ll take care of the rest.</p>
+      </div>
+
+      <section class="menu-group" aria-labelledby="coffee-title">
+        <div class="menu-group-heading"><h3 id="coffee-title">Coffee</h3><span>Rich, smooth, and freshly brewed</span></div>
+        <div class="menu-grid">
+          <article class="menu-card" data-name="Cappuccino" data-price="50"><img src="images/cappuccino.jpg" alt="Cappuccino coffee" /><div class="card-content"><div><h4>Cappuccino</h4><p>Rich espresso with steamed milk.</p></div><div class="card-footer"><strong>$50.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Mocha" data-price="70"><img src="images/Mocha.jpg" alt="Mocha coffee" /><div class="card-content"><div><h4>Mocha</h4><p>Espresso with chocolate and milk.</p></div><div class="card-footer"><strong>$70.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Espresso" data-price="80"><img src="images/Espresso.jpg" alt="Espresso coffee" /><div class="card-content"><div><h4>Espresso</h4><p>Bold, pure, and full-bodied.</p></div><div class="card-footer"><strong>$80.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Caramel Latte" data-price="50"><img src="images/Caramel latte.jpg" alt="Caramel latte" /><div class="card-content"><div><h4>Caramel Latte</h4><p>Velvety coffee with caramel.</p></div><div class="card-footer"><strong>$50.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Latte" data-price="60.55"><img src="images/Latte.jpg" alt="Latte coffee" /><div class="card-content"><div><h4>Latte</h4><p>A smooth and mellow classic.</p></div><div class="card-footer"><strong>$60.55</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Americano" data-price="100"><img src="images/Americano.jpg" alt="Americano coffee" /><div class="card-content"><div><h4>Americano</h4><p>Espresso softened with hot water.</p></div><div class="card-footer"><strong>$100.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+        </div>
+      </section>
+
+      <section class="menu-group" aria-labelledby="cold-title">
+        <div class="menu-group-heading"><h3 id="cold-title">Cold drinks</h3><span>Cool, creamy, and refreshing</span></div>
+        <div class="menu-grid">
+          <article class="menu-card" data-name="Iced Latte" data-price="30.5"><img src="images/Iced  Latte.jpg" alt="Iced latte" /><div class="card-content"><div><h4>Iced Latte</h4><p>Cold coffee, milk, and ice.</p></div><div class="card-footer"><strong>$30.50</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Chocolate Frappe" data-price="200"><img src="images/Chocolate  Frappe.jpg" alt="Chocolate frappe" /><div class="card-content"><div><h4>Chocolate Frappe</h4><p>Blended chocolate coffee delight.</p></div><div class="card-footer"><strong>$200.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Chocolate Milkshake" data-price="90"><img src="images/Chocolate milkshake.jpg" alt="Chocolate milkshake" /><div class="card-content"><div><h4>Chocolate Milkshake</h4><p>Chocolate and milk, perfectly cold.</p></div><div class="card-footer"><strong>$90.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Strawberry Milkshake" data-price="120"><img src="images/Strawberry Milkshake.jpg" alt="Strawberry milkshake" /><div class="card-content"><div><h4>Strawberry Milkshake</h4><p>Sweet, creamy strawberry blend.</p></div><div class="card-footer"><strong>$120.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Vanilla Milkshake" data-price="150"><img src="images/Vanilla milkshake.jpg" alt="Vanilla milkshake" /><div class="card-content"><div><h4>Vanilla Milkshake</h4><p>Classic vanilla, extra creamy.</p></div><div class="card-footer"><strong>$150.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Lemonade" data-price="60"><img src="images/Lemonade.jpg" alt="Fresh lemonade" /><div class="card-content"><div><h4>Lemonade</h4><p>Bright, zesty, and refreshing.</p></div><div class="card-footer"><strong>$60.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+        </div>
+      </section>
+
+      <section class="menu-group" aria-labelledby="treats-title">
+        <div class="menu-group-heading"><h3 id="treats-title">Pastries & desserts</h3><span>A little something sweet</span></div>
+        <div class="menu-grid">
+          <article class="menu-card" data-name="Croissant" data-price="250"><img src="images/Croissant.jpg" alt="Fresh croissant" /><div class="card-content"><div><h4>Croissant</h4><p>Buttery, flaky, and oven-fresh.</p></div><div class="card-footer"><strong>$250.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Cinnamon Roll" data-price="300"><img src="images/Cinnamon rolls.jpg" alt="Cinnamon rolls" /><div class="card-content"><div><h4>Cinnamon Roll</h4><p>Soft pastry with warm cinnamon.</p></div><div class="card-footer"><strong>$300.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Muffin" data-price="180"><img src="images/Muffin.jpg" alt="Fresh muffin" /><div class="card-content"><div><h4>Muffin</h4><p>A tender, easy-to-love treat.</p></div><div class="card-footer"><strong>$180.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Chocolate Cake" data-price="100"><img src="images/CAKE.jpg" alt="Slice of chocolate cake" /><div class="card-content"><div><h4>Chocolate Cake</h4><p>Rich chocolate with less sugar.</p></div><div class="card-footer"><strong>$100.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Brownie" data-price="250"><img src="images/Brownie.jpg" alt="Chocolate brownie" /><div class="card-content"><div><h4>Brownie</h4><p>Fudgy, chocolatey, and satisfying.</p></div><div class="card-footer"><strong>$250.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+          <article class="menu-card" data-name="Cheesecake" data-price="140"><img src="images/Cheesecake.jpg" alt="Cheesecake slice" /><div class="card-content"><div><h4>Cheesecake</h4><p>Silky, creamy, and gently sweet.</p></div><div class="card-footer"><strong>$140.00</strong><button type="button" class="add-item-button">Add <span aria-hidden="true">+</span></button></div></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="order-section" id="coffee-order" aria-labelledby="coffee-order-title">
+      <div class="section-heading order-heading">
+        <div>
+          <p class="eyebrow">YOUR SELECTION</p>
+          <h2 id="coffee-order-title">Your order, your way.</h2>
+        </div>
+        <p>Review your items, choose your coffee preferences, then place your order.</p>
+      </div>
+
+      <div class="coffee-order-grid">
+        <section class="coffee-order-summary" aria-labelledby="order-summary-title">
+          <div class="order-summary-header">
+            <h3 id="order-summary-title">Order summary</h3>
+            <span id="coffee-order-count" class="order-count">0 items</span>
+          </div>
+          <p id="coffee-order-empty" class="coffee-order-empty">Your basket is empty. Add something from the menu to begin.</p>
+          <ul id="coffee-order-items" class="coffee-order-items" aria-live="polite"></ul>
+          <div class="coffee-order-total"><span>Total</span><strong id="coffee-order-total">$0.00</strong></div>
+          <button id="clear-coffee-order" class="clear-order-button" type="button" hidden>Clear order</button>
+        </section>
+
+        <form id="coffee-preferences" class="coffee-preferences">
+          <h3>Make it yours</h3>
+          <p class="preference-note">We’ll apply these preferences to the coffee drinks in your order.</p>
+          <div class="preference-field">
+            <label for="coffee-size">Coffee size</label>
+            <select name="size" id="coffee-size"><option value="Small">Small</option><option value="Medium" selected>Medium</option><option value="Large">Large</option></select>
+          </div>
+          <fieldset>
+            <legend>Sugar</legend>
+            <div class="choice-grid"><label><input type="radio" name="sugar" value="No sugar" /> No sugar</label><label><input type="radio" name="sugar" value="1 spoon" checked /> 1 spoon</label><label><input type="radio" name="sugar" value="2 spoons" /> 2 spoons</label></div>
+          </fieldset>
+          <fieldset class="milk-field">
+            <legend>Milk</legend>
+            <div class="choice-grid"><label><input type="radio" name="milk" value="1 spoon" />1 spoon</label></div>
+            <div class="choice-grid"><label><input type="radio" name="milk" value="2 spoon" />2 spoon</label></div>
+            <div class="choice-grid"><label><input type="radio" name="milk" value="No milk" />No Milk</label></div>
+
+          </fieldset>
+          <fieldset class="table-field">
+          <legend>Table NUM</legend>
+            <label><input type="number" name="table" id="table"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Extras</legend>
+            <div class="choice-grid"><label><input type="checkbox" name="extras" value="Caramel" /> Caramel</label><label><input type="checkbox" name="extras" value="Whipped cream" /> Whipped cream</label></div>
+          </fieldset>
+          <button id="place-coffee-order" class="place-order-button" type="submit">Place order <span aria-hidden="true">→</span></button>
+          <p id="coffee-order-status" class="coffee-order-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div><p class="eyebrow">OUR COFFEE SHOP</p><h2>A cosy stop, whenever you need one.</h2></div>
+      <p>Patty’s Coffee Shop is a warm, welcoming place for freshly brewed coffee, delicious pastries, and light snacks. Whether you are starting your morning, meeting friends, studying, or taking a quiet break, we’re here to make your visit special.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand"><span class="brand-mark" aria-hidden="true">P</span><strong>Patty’s Coffee Shop</strong></div>
+    <div><p>Visit us</p><address>Awka Road, opposite Chicken Republic, Onitsha</address></div>
+    <div><p>Get in touch</p><a href="tel:+2348124310205">+234 812 431 0205</a><a href="mailto:obiorahpatrick8@gmail.com">obiorahpatrick8@gmail.com</a></div>
+    <p class="copyright">© 2026 Patty’s Coffee Shop</p>
+  </footer>
+
+  <div id="order-confirmation" class="confirmation-backdrop" hidden>
+    <section class="confirmation-card" role="dialog" aria-modal="true" aria-labelledby="confirmation-title">
+      <button id="close-confirmation" class="close-confirmation" type="button" aria-label="Close confirmation">×</button>
+      <span class="success-icon" aria-hidden="true">✓</span>
+      <p class="eyebrow">ORDER CONFIRMED</p>
+      <h2 id="confirmation-title">Thanks for shopping with us!</h2>
+      <p class="confirmation-copy">We’ve received your order and will start preparing it shortly.</p>
+      <div class="receipt-details"><span>Order number</span><strong id="confirmation-number"></strong><span>Estimated ready time</span><strong>10–15 minutes</strong><span>Total</span><strong id="confirmation-total"></strong></div>
+      <button id="done-button" class="primary-button" type="button">Done</button>
+    </section>
+  </div>
+
+  <script src="JS/coffee-order.js"></script>
+</body>
+</html>
